@@ -1,29 +1,37 @@
-# Translate-to-Bhili
-# 📄 PDF → DOCX Converter with Layout Preservation
+# Hindi/English → Bhili (DOCX/PDF to DOCX)
 
-This project converts a **PDF file to a DOCX (Word) file** while preserving layout as much as possible using **block-level text extraction**.
+This project converts **English or Hindi `.docx` or `.pdf` files into Bhili `.docx` files** using the **Adivaani Translation API**, while preserving the original **paragraph/block layout** as much as possible.
 
-It is adapted from an earlier `.docx → .docx` pipeline, and now supports **PDF input** with structured reconstruction in **DOCX output**.
+It was designed for low-resource language processing, especially for **Bhili**.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-✅ Accepts `.pdf` and `.docx` as input  
-✅ Always outputs `.docx`  
-✅ Preserves line breaks & paragraph structure  
-✅ Works page by page  
-✅ Ready for translation pipeline  
-🔜 Optional: table & image preservation  
+✔️ Input: **English or Hindi**  
+✔️ Output: **Bhili (.docx)**  
+✔️ Supported formats: **.docx, .pdf**  
+✔️ Preserves **paragraph + table + block layout**  
+✔️ Uses **Adivaani API** for translation  
+✔️ Automatically detects file type  
+✔️ Verifies block count before rebuilding DOCX  
+
+---
+
+## 📂 Input → Output
+
+| Input File | Language | Output File |
+|------|------|------|
+| `input.docx` | English/Hindi | `bhili.docx` |
+| `input.pdf` | English/Hindi | `bhili.docx` |
 
 ---
 
 ## 📦 Installation
 
-Create a virtual environment (recommended):
+Create virtual environment (recommended):
 
 ```bash
 python -m venv venv
 source venv/bin/activate    # Mac/Linux
 venv\Scripts\activate       # Windows
-
