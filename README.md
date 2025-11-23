@@ -27,11 +27,11 @@ It was designed for low-resource language processing, especially for **Bhili**.
 
 ---
 
-## 📦 Installation
+## 📦 Usage   
+python doc_to_bhili.py --file `new.pdf` --lang `hi`  
+python doc_to_bhili.py --file `new.docx` --lang `hi`    
+python doc_to_bhili.py --file `new.pdf` --lang `en`    
+python doc_to_bhili.py --file `new.pdf` --lang `en`     
 
-Create virtual environment (recommended):
 
-```bash
-python -m venv venv
-source venv/bin/activate    # Mac/Linux
-venv\Scripts\activate       # Windows
+
